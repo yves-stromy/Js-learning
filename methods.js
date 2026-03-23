@@ -30,3 +30,43 @@ console.log(fruits)
 console.log(fruits.includes("apple"))
 //.length-returns the number of items in an array
 console.log(fruits.length)
+
+//indexing-it's used to access a specific element using they're position
+let students=["mary","john","grace","mark"]
+console.log(students)
+//indexing starts from zero
+console.log(students[0])
+console.log(students[1])
+console.log(students[2])
+console.log(students[3])
+console.log(students[4])
+
+let language="javascript"
+console.log(language)
+console.log(language[0])
+console.log(language[5])
+
+//object methods
+let employee={
+    name:"sara",
+    role:"developer",
+    salary:50000
+}
+console.log(employee)
+//Objects.keys()-it returns all the keys
+console.log(Object.keys(employee))
+//Objects.values()- returns all the values
+console.log(Object.values(employee))
+
+//Object.entries()- returns keys and values together
+console.log(Object.entries(employee))
+
+let user={
+    username:"john doe",
+    age: 34,
+    email:"johndoe@gmail.com"
+}
+console.log(user)
+console.log(Object.keys(user))
+console.log(Object.values(user))
+console.log(Object.entries(user))
