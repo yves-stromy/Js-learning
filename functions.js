@@ -50,4 +50,51 @@ function greetings(name="guest"){
     console.log("hello "+name)
 }
 greetings()
-greetings("benjamin")
+greetings()
+
+//arrow fuctions- can be nested(used) inside in  other functions
+const sayHello=(user)=>{
+console.log("hello "+user)
+}
+sayHello("Lucy")
+sayHello("Mark")
+
+const multiply=(x,y)=>{
+    console.log(x*y)
+}
+multiply(50,10)
+
+const checkScore=(score)=>{
+    if(score>=50){
+        console.log("pass")
+    }else{
+        console.log("fail")
+    }
+}
+checkScore(70)
+//callbacks-it's a function passed into another function and runs after something happens
+function greetCustomer(name,callback){
+    console.log("hello "+name)
+    callback()
+}
+greetCustomer("Mark",()=>{
+    console.log("welcome to our site")
+})
+
+function processPayment(callback){
+    console.log("processing payment...")
+    callback()
+}
+processPayment(()=>{
+console.log("payment successful")
+})
+
+//scope
+//global vs local variables
+let globalVar="i am global"
+function test(){
+    let localVar="i am local"
+    console.log(localVar)
+    console.log(globalVar)
+}
+test()
